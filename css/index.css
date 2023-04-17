@@ -1,0 +1,141 @@
+body
+{
+
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: ghostwhite;
+}
+
+h1
+{
+padding: 15px;
+border-left: solid 5px gray;
+border-right: solid 5px gray;
+
+}
+
+.title
+{
+
+border-top: solid 10px gray;
+border-bottom: solid 10px gray;
+margin-top: 30px;
+width: 100%;    
+text-align: center;
+}
+
+.title_container
+{
+
+display: inline-flex;
+width: fit-content;
+margin: auto;
+font-size: 30px;
+
+}
+
+.choice
+{
+
+width: 100%;
+/*box-shadow: 0px 0px 5px black;*/
+}
+
+.choice_container
+{
+
+width: fit-content;
+margin: auto;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 50%;
+
+}
+
+
+.choice_container_one
+{
+
+/*border: solid 1px red;*/
+text-align: center;
+margin: 30px 30px;
+border-radius: 5px;
+box-shadow: 0px 0px 3px black;
+width: 200px;
+height: 250px;
+
+}
+
+.choice_container_one p 
+{
+font-size: 20px;
+margin: auto;
+width: fit-content;
+
+}
+
+.choice_container_one img
+{
+
+width: 200px;
+height: 170px;
+
+}
+
+.title img
+{
+
+width: 150px;
+height: 150px;
+
+}
+
+.mentions{
+
+position: relative;
+text-align: center;
+margin: auto;
+background-color:steelblue;
+color: white;
+margin-top: 100px;
+height: 200px;
+margin-bottom: 0;
+
+}
+
+
+
+
+
+.contact{
+
+margin: auto;
+text-decoration: none;
+color: white;
+width: fit-content;
+height: fit-content;
+border-radius: 5px;
+background-color: crimson;
+border: solid 5px crimson;
+font-size: 40px;
+
+
+}
+
+.infos_contact
+{
+
+margin-top: 100px;
+}
+
+
+
+/* effets */
+
+.choice_container_one:hover
+{
+
+transform: scale(1.05);
+
+
+}

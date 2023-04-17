@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scolarité</title>
+    <link rel="stylesheet" href="../css/scolarite.css">
+</head>
+<body>
+    
+
+<section class="title">
+
+    <div class="title_container">
+        
+        <img src="../Images/circle.png" alt="">    <h1>Portfolio Dorian BELLAIRE</h1>
+
+    </div>
+
+</section>  
+
+
+<section class="presentation">
+
+    <div class="presentation_container">
+
+        <h2 class="text_header">Profil</h2>
+
+        <p>
+        Actuellement en 2e année de BTS SIO (service informatique aux organisations) option SLAM (Solutions Logicielles et Applications Métiers) <br>
+        Nous sommes formé au développement d'applications et de site web, tou en prenant en compte les aspects juridiques et sécurité. <br>
+        Ce BTS nous forme sur beacoup d'aspects techniques et est très plaisant a suivre. <br> </p>
+        <br>
+        <p>Concernant mes bulletins scolaires : <br>
+        <br>
+        Pour la première année : <br>
+        1er semestre : 15,88 <br>
+        2e semestre 15,97 <br>
+        <br>
+        Pour la deuxième année : <br>
+        1er semestre : 15,25 <br>
+        2e semestre : En cours
+        <br><br>
+        </p>
+
+        <br><br>
+
+        <p>
+        Durant la deuxième année du BTS SIO, nous furent amené a participer a deux projets : <br>
+        - Le premier est un logiciel de gestion pour une ecole de musique municipales <br>
+        - Le second est un site web de coivoituage qui met en lien les différents employés d'une entreprise, ce site web doit d'ailleurs resté privé a l'entreprise.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="projets">
+
+    <div class="projets_container">
+
+
+        <div class="projets_container_one"  id="open-btn">
+
+            <p>Ecole de musique ( Dshool )</p>
+            <img src="../Images/D School.png" alt="" >
+
+            
+
+        </div>
+
+        <div class="projets_container_one" id="open-btn1">
+
+            <p>Co-voiturage ( Colttaaige )</p>
+            <img src="../Images/colttaaige.jpg" alt="" >
+
+        </div>
+
+    </div>
+
+</section> 
+
+
+
+<section class="mentions">
+
+    <div class="infos_contact">
+        
+        <br><br><a href="Sections/contact.php" class = "contact">Contact</a> 
+        <p>Téléphone : XXXX-XX-XX-XX</p>
+        <p>Email : xxxxx.xxxxx@agritech.fr</p>
+            
+    </div>
+
+
+</section>
+
+<section class="pop">
+
+
+<div id="overlay" style="display:none;"></div>
+
+<div id="popup" style="display:none;">
+ 
+    <p>Voici quelques images du projet ecole de musique</p>
+    
+    <img src="../Images/Dshool/Capture d’écran (35).png" alt=""> <br> <br>
+    <img src="../Images/Dshool/Capture d’écran (36).png" alt=""> <br> <br>
+    <img src="../Images/Dshool/Capture d’écran (37).png" alt="">
+
+    <br>
+  
+    <button id="close-btn">Fermer</button>
+  </div>
+  
+
+<div id="popup1" style="display:none;">
+ 
+    <p>Voici quelques images du projet ecole de musique</p>
+    
+    <img src="../Images/Coltaaige/Capture d’écran (30).png" alt=""> <br> <br>
+    <img src="../Images/Coltaaige/Capture d’écran (31).png" alt=""> <br> <br>
+    <img src="../Images/Coltaaige/Capture d’écran (34).png" alt="">
+
+    <br>
+
+  <button id="close-btn1">Fermer</button>
+</div>
+
+</section>
+
+<script>
+
+    const overlay = document.getElementById("overlay");
+
+    const popup = document.getElementById("popup"); 
+    const openBtn = document.getElementById("open-btn");
+    const closeBtn = document.getElementById("close-btn");
+    
+    openBtn.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    });
+    
+    closeBtn.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+      }
+    });
+
+    /*----------------------------------------------*/
+    const popup1 = document.getElementById("popup1"); 
+    const openBtn1 = document.getElementById("open-btn1");
+    const closeBtn1 = document.getElementById("close-btn1");
+    
+    openBtn1.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup1.style.display = "block";
+    });
+    
+    closeBtn1.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup1.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+        popup1.style.display = "none";
+      }
+    });
+
+
+</script>
+
+</body>
+</html>

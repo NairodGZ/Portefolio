@@ -1,0 +1,199 @@
+body
+{
+
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: ghostwhite;
+}
+
+.title
+{
+
+border-top: solid 10px gray;
+border-bottom: solid 10px gray;
+margin-top: 50px;
+width: 100%;    
+text-align: center;
+}
+
+.title_container
+{
+
+display: inline-flex;
+width: fit-content;
+margin: auto;
+font-size: 30px;
+
+}
+
+.title img
+{
+
+width: 150px;
+height: 150px;
+
+}
+
+.presentation
+{
+width: 100%;
+text-align: center;
+margin-top: 50px;
+}
+
+.presentation_container
+{
+/*box-shadow: 0px 0px 5px black;*/
+width: fit-content;
+margin: auto;
+
+}
+
+.presentation_container p 
+{
+border-bottom: dotted 5px gray;
+font-size: 20px;
+margin-top: 30px;
+padding-bottom: 10px;
+}
+
+.projets
+{
+width: 100%;
+text-align: center;
+margin-top: 100px;
+z-index: 0;
+}
+
+.projets_container
+{
+/*box-shadow: 0px 0px 5px black;*/
+width: fit-content;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+/*vertical-align: baseline;*/
+
+}
+
+.projets_container_one
+{
+margin: 10px 50px;
+width: 300px;
+height: 300px;
+box-shadow: 0px 0px 8px black;
+/*vertical-align: baseline;*/
+}
+
+.projets img
+{
+width: 150px;
+height: 150px;
+}
+
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.9);
+z-index: 1;
+
+}
+
+#popup {
+border-radius: 50px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color:aliceblue;
+padding: 20px;
+z-index: 2;
+text-align: center;
+font-size: 20px;
+}
+
+#popup1 {
+/*display: flex;
+flex-wrap: wrap;
+flex-direction: column;*/
+/*border-radius: 50px;*/
+position: absolute;
+width: fit-content;
+margin-top: 8%;
+left: 50%;
+width: fit-content;
+/*height: 100%;*/
+transform: translate(-50%, -50%);
+background-color:ghostwhite;
+padding: 20px;
+z-index: 2;
+text-align: center;
+font-size: 20px;
+}
+
+
+
+#popup img
+{
+
+width: 600px;
+height: 200px;
+
+}
+
+#popup1 img
+{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+width: 600px;
+height: 500px;
+
+}
+
+
+.mentions{
+
+position: relative;
+text-align: center;
+margin: auto;
+background-color:steelblue;
+color: white;
+margin-top: 100px;
+height: 200px;
+margin-bottom: 0;
+
+}
+
+.contact{
+
+margin: auto;
+text-decoration: none;
+color: white;
+width: fit-content;
+height: fit-content;
+border-radius: 5px;
+background-color: crimson;
+border: solid 5px crimson;
+font-size: 40px;
+
+
+}
+
+
+@media all and (max-width:1000px){
+
+
+    body{
+
+
+
+       transform: scale(0.8);
+
+
+    }
+}

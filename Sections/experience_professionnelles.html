@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences professsionnelles</title>
+    <link rel="stylesheet" href="../css/experiences_professionnnelles.css">
+</head>
+<body>
+  
+<section class="title">
+
+        <div class="title_container">
+            
+            <img src="../Images/circle.png" alt="">    <h1>Portfolio Dorian BELLAIRE</h1>
+        
+        </div>
+        
+</section>  
+
+
+
+
+<div id="overlay" style="display:none;"></div>
+
+<div id="popup" style="display:none;">
+ 
+  <img src="../Images/connexion.jpg" alt="" >
+  <p>Mon stage a connexion m'as permis de faire connnaissance avec le monde professionnel. <br>
+  <br>
+  Durant ce stage j'ai : <br> 
+  - Changé des écrans d'ordinareur <br>
+  - Analysé piece par piece les composants d'un ordinateur défectueux afin d'en régler le problème <br>
+  - Rangé des cables emméles dans des boites <br>
+  - Aidé a la soudure d'une carte mère de machine a laver <br>
+  <br>
+  Ce fut une très bonne expérience dans un millieu que j'aime : l'informatique <br><br></p>
+  <button id="close-btn">Fermer</button>
+</div>
+
+
+
+<div id="popup1" style="display:none;">
+ 
+  <img src="../Images/sima.jpg" alt="" >
+  <p>Ce stage de première année de BTS SIO fut ma première expérience professionnelle concrète <br>
+  <br>
+  J'ai pu durant ce stage, développer un site web permettant aux clients de sima antilles guyane d'accéder a leurs factures apres s'etre authentifié par identifiant et mot de passe.<br>
+  <br>
+  Le développement fut en html,css,javascript,php ainsi que sql server ainsi qu'un script windows<br>
+  <br>
+  Cette expérience m'as permis de voir la rélatité du travail de développeur, qui est certes difficile mais passionnant <br><br>
+  Le site que j'ai développé est actuellement en ligne a <a href="http://factures-ag.sima-antilles.com/Sima_php/pageconnection.php?Section=SIMA_AG">cette adresse</a>.</p>
+  <button id="close-btn1">Fermer</button>
+</div>
+
+
+
+
+<div id="popup2" style="display:none;">
+ 
+  <img src="../Images/sima.jpg" alt="" >
+  <p>J'ai effectué mon stage de 2e année dans la meme entreprise que pour la 1ere année <br>
+  <br>
+  Durant ce stage, j'ai finalisé quelques bugs du site de la première année en plus d'améliorer son aspect visuel.<br>
+  <br>
+  Suite a cela, j'ai entammé le développement d'un module prestashop pour un site e-commerce que l'entreprise veut créer. <br>
+  Ce module a pour but la gestion automatique des retours en garantie des produits, c'est a dire de vérifier automatiquement si le produit est sous garantie et si oui de le renvoyer vers le prestateur local correspondant. <br>
+  <br>
+  prestashop tournant sous php symphony, le développement se fut sur le framework php symphony <br>
+  Cete expérience fut très dépaysante, car sous un framework, tout est encadré, on ne peut pas faire comme bon nous semble et donc on évite le bricolage <br>
+  Ce fut une bonne expérience puisqu'elle me permit de mieux encadrer et structurer mon code. <br>
+  <br>
+  Toutefois, le débveloppement n'est pas encore fini car le directeur de l'entreprise m'as solicité pour les grandes vacance afin de finir le développement. <br>
+  Ce sera donc un vrai travail hors du parcours scolaire et non un stage scolaire.</p>
+  <button id="close-btn2">Fermer</button>
+</div>
+
+
+
+<section class="presentation">
+
+    <h2 class="text_header">Expériences professsionnelles</h2>
+
+    <div class="presentation_container">
+
+        
+
+        <div class="presentation_container_one"  id="open-btn">
+
+            <p>Stage a connexion jarry (3e)</p>
+            <img src="../Images/connexion.jpg" alt="" >
+
+            
+
+        </div>
+
+        <div class="presentation_container_one" id="open-btn1">
+
+            <p>Stage a Sima Antilles Guyane (BTS SIO 1ere annéee)</p>
+            <img src="../Images/sima.jpg" alt="" >
+
+        </div>
+
+        <div class="presentation_container_one" id="open-btn2">
+
+            <p>Stage a Sima Antilles Guyane (BTS SIO 2e annéee)</p>
+            <img src="../Images/sima.jpg" alt="" >
+
+        </div>
+        
+
+    </div>
+
+</section>
+
+
+<section class="mentions">
+
+    <div class="infos_contact">
+        
+        <br><br><a href="Sections/contact.php" class = "contact">Contact</a> 
+        <p>Téléphone : XXXX-XX-XX-XX</p>
+        <p>Email : xxxxx.xxxxx@agritech.fr</p>
+            
+    </div>
+
+
+</section>
+
+
+<script>
+
+  const overlay = document.getElementById("overlay");
+
+    const popup = document.getElementById("popup"); 
+    const openBtn = document.getElementById("open-btn");
+    const closeBtn = document.getElementById("close-btn");
+    
+    openBtn.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    });
+    
+    closeBtn.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+      }
+    });
+
+    /*----------------------------------------------*/
+    const popup1 = document.getElementById("popup1"); 
+    const openBtn1 = document.getElementById("open-btn1");
+    const closeBtn1 = document.getElementById("close-btn1");
+    
+    openBtn1.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup1.style.display = "block";
+    });
+    
+    closeBtn1.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup1.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+        popup1.style.display = "none";
+      }
+    });
+
+    /*----------------------------------------------*/
+    const popup2 = document.getElementById("popup2"); 
+    const openBtn2 = document.getElementById("open-btn2");
+    const closeBtn2 = document.getElementById("close-btn2");
+    
+    openBtn2.addEventListener("click", function() {
+      overlay.style.display = "block";
+      popup2.style.display = "block";
+    });
+    
+    closeBtn2.addEventListener("click", function() {
+      overlay.style.display = "none";
+      popup2.style.display = "none";
+    });
+    
+    window.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+        popup2.style.display = "none";
+      }
+    });
+    
+    
+</script>
+
+</body>
+</html>
