@@ -60,7 +60,7 @@ padding-bottom: 10px;
 {
 width: 100%;
 text-align: center;
-margin-top: 100px;
+margin-top: 1px;
 z-index: 0;
 }
 
@@ -146,10 +146,10 @@ height: 200px;
 
 #popup1 img
 {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
 width: 600px;
 height: 500px;
 
@@ -163,7 +163,7 @@ text-align: center;
 margin: auto;
 background-color:steelblue;
 color: white;
-margin-top: 100px;
+margin-top: 40px;
 height: 200px;
 margin-bottom: 0;
 
@@ -185,15 +185,59 @@ font-size: 40px;
 }
 
 
+.retour{
+
+    width: 100%;
+    
+    margin-top: 50px;
+    
+    
+    }
+    
+    .retour_container{
+    
+    width: fit-content;
+    
+    text-align: center;
+    
+   
+    
+    
+    
+    text-decoration: none;
+    
+    margin: auto;
+    }
+    
+    
+    .retour_button{
+    
+    color: white;
+    
+    text-decoration: none;
+    
+    background-color: crimson;
+    
+    border: solid 5px crimson;
+    
+    font-size: 40px;
+    
+    /*width: 100%;*/
+    
+    }
+    
+
+
+
 @media all and (max-width:1000px){
 
 
-    body{
+body{
 
 
 
-       transform: scale(0.8);
+    transform: scale(0.8);
 
 
-    }
+}
 }
